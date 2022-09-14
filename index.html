@@ -1,0 +1,142 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+<!-- Banner Section -->
+<section class="banner-section banner-two">
+    <div class="banner-carousel owl-theme owl-carousel">
+        
+        {% for item in site.featured %}
+        <!-- Slide Item -->
+        <div class="slide-item">
+            <div class="image-layer" style="background-image:url( {{ item.image }} )"></div>
+
+            <div class="auto-container">
+                <div class="content-box">
+                    <div class="content">
+                        <div class="inner">
+                            <div class="big-title">
+                                <div class="text-piece">{{ item.subtitle }}</div>
+                                <div class="big-text">{{ item.title }}</div>
+                            </div>
+                            <div class="link-box">
+                                <a href="games.html" class="theme-btn btn-style-one"><span class="btn-title"><i class="btn-icon"></i> <span class="btn-text">learn more</span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        {% endfor %}
+        
+    </div>
+</section>
+<!--End Banner Section -->
+
+<!--About Section Two-->
+<section class="about-section-two">
+    <div class="image-layer" style="background-image:url(images/background/bg-2.png)"></div>
+
+    <div class="auto-container">
+        <!--Platforms-->
+        <div class="platforms">
+            <div class="row clearfix">
+                <!--Platform Block-->
+                <div class="platofrm-block col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="2000ms" data-wow-delay="0ms">
+                    <div class="inner-box">
+                        <div class="icon-box"><span class="flaticon-playstore-1"></span></div>
+                        <div class="inner">
+                            <div class="p-title">
+                                <span class="upper-span">GAMES FOR</span> 
+                                <span class="lower-span">playstore</span>
+                            </div>
+                            <div class="hover-text">Aepteur sintas haeca sed cupidatat sunt.</div>
+                        </div>
+                        <a href="#" class="over-link"></a>
+                    </div>
+                </div>
+                <!--Platform Block-->
+                <div class="platofrm-block col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="2000ms" data-wow-delay="300ms">
+                    <div class="inner-box">
+                        <div class="icon-box"><span class="flaticon-xbox-logo"></span></div>
+                        <div class="inner">
+                            <div class="p-title">
+                                <span class="upper-span">GAMES FOR</span> 
+                                <span class="lower-span">Xbox one x</span>
+                            </div>
+                            <div class="hover-text">Aepteur sintas haeca sed cupidatat sunt.</div>
+                        </div>
+                        <a href="#" class="over-link"></a>
+                    </div>
+                </div>
+                <!--Platform Block-->
+                <div class="platofrm-block col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="2000ms" data-wow-delay="600ms">
+                    <div class="inner-box">
+                        <div class="icon-box"><span class="flaticon-apple-1"></span></div>
+                        <div class="inner">
+                            <div class="p-title">
+                                <span class="upper-span">GAMES FOR</span> 
+                                <span class="lower-span">app store</span>
+                            </div>
+                            <div class="hover-text">Aepteur sintas haeca sed cupidatat sunt.</div>
+                        </div>
+                        <a href="#" class="over-link"></a>
+                    </div>
+                </div>
+                <!--Platform Block-->
+                <div class="platofrm-block col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="2000ms" data-wow-delay="900ms">
+                    <div class="inner-box">
+                        <div class="icon-box"><span class="flaticon-steam-3"></span></div>
+                        <div class="inner">
+                            <div class="p-title">
+                                <span class="upper-span">GAMES FOR</span> 
+                                <span class="lower-span">vr / steam</span>
+                            </div>
+                            <div class="hover-text">Aepteur sintas haeca sed cupidatat sunt.</div>
+                        </div>
+                        <a href="#" class="over-link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Middle Row-->
+        <div class="mid-row">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <!--Text Column-->
+                    <div class="text-col col-lg-6 col-md-12 wow fadeInLeft" data-wow-duration="2000ms" data-wow-delay="0ms">
+                        <div class="inner">
+                            <div class="sec-title">
+                                <div class="upper-text">about BCI GAMES</div>
+                                <h2>Gaming is for Everyone <br>No Exceptions</h2>
+                                <div class="lower-line">
+                                    <span class="icon"></span>
+                                    <span class="line"></span>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><strong>Veniam quis nostrud exercitation ullamco laboris nisut aliquipe duis aute irure dolor in reprehenderit sed voluptate velit.</strong></p>
+                                <p>Duis aute irure dolor reprehenderit in voluptate velit essle cillum dolore eu fugiat nulla pariatur. Excepteur sint ocaec at cupdatat proident sunt in culpa qui officia deserunt mol anim id esa laborum perspiciatis omnis laorem ipsum dolor sit ipsum amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Image Column-->
+                    <div class="image-col col-lg-6 col-md-12 wow fadeInRight" data-wow-duration="2000ms" data-wow-delay="0ms">
+                        <div class="inner">
+                            <div class="images clearfix">
+                                <div class="image"><img src="assets/images/resource/featured-image-4.jpg" alt=""></div>
+                                <div class="image"><img src="assets/images/resource/featured-image-5.jpg" alt=""></div>
+                                <div class="image"><img src="assets/images/resource/featured-image-6.png" alt=""></div>
+                                <div class="image"><img src="assets/images/resource/featured-image-7.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
