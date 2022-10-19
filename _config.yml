@@ -45,9 +45,10 @@ plugins:
   - jekyll-paginate-v2
 
 collections:
-  - team
-  - games
-  - featured
+  team:
+  games:
+    output: true
+  featured:
 
 # Exclude from processing.
 # The following items will not be processed, by default.

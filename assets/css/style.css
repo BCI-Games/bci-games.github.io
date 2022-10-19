@@ -994,6 +994,12 @@ img{
 	width: 100%;
 }
 
+.header-style-two-sub{
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
 .main-header .header-top{
 	position: relative;
 	padding: 10px 0px;
@@ -1076,7 +1082,23 @@ img{
 	min-height: 130px;
 }
 
+.header-style-two-sub .lower-inner{
+	position: relative;
+	min-height: 130px;
+}
+
 .header-style-two .lower-inner .logo-box{
+	position: absolute;
+	left: 50%;
+	margin-left: -120px;
+	top: 0;
+	width: 240px;
+	padding: 25px 0px;
+	text-align: center;
+	z-index: 10;
+}
+
+.header-style-two-sub .lower-inner .logo-box{
 	position: absolute;
 	left: 50%;
 	margin-left: -120px;
@@ -1091,8 +1113,19 @@ img{
 	max-height: 80px;
 }
 
+.header-style-two-sub .lower-inner .logo-box img{
+	max-height: 80px;
+}
+
 .header-style-two .nav-outer,
 .header-style-two .nav-outer .main-menu{
+	position: relative;
+	width: 100%;
+	z-index: 5;
+}
+
+.header-style-two-sub .nav-outer,
+.header-style-two-sub .nav-outer .main-menu{
 	position: relative;
 	width: 100%;
 	z-index: 5;
@@ -1103,7 +1136,18 @@ img{
 	width: 50%;
 }
 
+.header-style-two-sub .nav-outer .navigation{
+	float: left;
+	width: 50%;
+}
+
 .header-style-two .nav-outer .navigation li{
+	position: relative;
+	display: inline-block;
+	float: none;
+}
+
+.header-style-two-sub .nav-outer .navigation li{
 	position: relative;
 	display: inline-block;
 	float: none;
@@ -1114,7 +1158,17 @@ img{
 	text-align: right;
 }
 
+.header-style-two-sub .nav-outer .navigation:nth-child(1){
+	padding-right: 180px;
+	text-align: right;
+}
+
 .header-style-two .nav-outer .navigation:nth-child(1) > li{
+	margin-left: 50px;
+	margin-right: 0;
+}
+
+.header-style-two-sub .nav-outer .navigation:nth-child(1) > li{
 	margin-left: 50px;
 	margin-right: 0;
 }
@@ -1125,7 +1179,18 @@ img{
 	text-align: left;
 }
 
+.header-style-two-sub .nav-outer .navigation:nth-child(2){
+	float: right;
+	padding-left: 180px;
+	text-align: left;
+}
+
 .header-style-two .nav-outer .navigation:nth-child(2) > li{
+	margin-left: 0px;
+	margin-right: 50px;
+}
+
+.header-style-two-sub .nav-outer .navigation:nth-child(2) > li{
 	margin-left: 0px;
 	margin-right: 50px;
 }
