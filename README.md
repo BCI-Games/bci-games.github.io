@@ -1,6 +1,6 @@
 # BCI GAMES Website
 
-Welcome to the public code repository for BCI Games. A company that helps developers integrate Brain Computer Interfaces into their video games and provides families and individuals with paralysis or motor disabilities resources and access to BCI enabled video games. BCI Games is created by developers and researchers and our site is open source to allow for those who notice a bug to make changes.
+Welcome to the public code repository for BCI Games. A company that helps developers integrate Brain Computer Interfaces into their video games and provides families and individuals with complex physical needs, paralysis or other motor disabilities resources and access to BCI enabled video games. BCI Games is created by developers and researchers and our site is open source to allow for those who notice a bug to make changes.
 
 ## How the site works
 This website is statically generated. Everytime a code change is made to the development branch, github actions will clone the repository and build the entire website and pull our discord sesh events and publish the results to our master branch to be served using Github Pages. This keeps operating costs at a minimum while ensuring the website remains secure.
