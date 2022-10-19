@@ -39,6 +39,7 @@ copyright: Copyright BCI Games 2019-2022. All Rights Reserved.
 
 # Build settings
 theme: minima
+timezone: America/Edmonton
 plugins:
   - jekyll-feed
   - jekyll-paginate-v2
