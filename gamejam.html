@@ -1,5 +1,7 @@
 ---
 title: BCI Game Jam 2022
+titleimage: /assets/images/jam2022.png
+eventdate: Dec 2-4, 2022
 image: /assets/images/background/gamejam2022.jpg
 theme: Mini Game Mania!
 description:
@@ -12,6 +14,8 @@ layout: default
         <div class="image-layer" style="background-image:url({{ page.image }})"></div>
         <div class="auto-container">
             <h1>{{ page.title }}</h1>
+            {% if page.titleimage %}<img width="50%" src="{{ page.titleimage }}" alt=""> {% endif %}
+            <h2>{{ page.eventdate }}</h2>
         </div>
     </div>
 </section>
