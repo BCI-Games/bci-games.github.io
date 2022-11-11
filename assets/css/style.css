@@ -7192,18 +7192,18 @@ body.search-visible{
 	left: 0;
 	bottom: 0;
 	width: 30px;
-	border-bottom: 2px solid #1d1f21;
+	border-bottom: 2px solid #cfcfcf;
 }
 
 .game-details .upper .title-box h3{
 	position: relative;
 	font-size: 30px;
 	text-transform: capitalize;
-	color: #1d1f21;
+	color: #cfcfcf;
 }
 
 .game-details .upper .title-box h3 a{
-	color: #1d1f21;
+	color: #cfcfcf;
 }
 
 .game-details .upper .title-box h3 a:hover{
