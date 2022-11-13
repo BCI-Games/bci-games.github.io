@@ -2514,7 +2514,7 @@ body.search-visible{
 	position: relative;
 	display: block;
 	line-height: 1.3em;
-	font-size: 16px;
+    font-size: 0.8em;
 	font-weight: 400;
 	letter-spacing: 0em;
 	text-transform: uppercase;

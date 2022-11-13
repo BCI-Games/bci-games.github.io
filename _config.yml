@@ -46,6 +46,9 @@ plugins:
 
 collections:
   team:
+  showcase:
+  resources:
+    output: true
   games:
     output: true
   featured:
