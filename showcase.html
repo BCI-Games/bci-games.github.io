@@ -1,3 +1,44 @@
 ---
 layout: default
+title: Showcase
+titleimage: 
 ---
+
+<!-- Page Banner Section -->
+<section class="page-banner">
+    <div class="banner-inner">
+        <div class="image-layer" style="background-image:url({{ page.image }})"></div>
+        <div class="auto-container">
+            <h1>{{ page.title }}</h1>
+            {% if page.titleimage %}<img width="50%" src="{{ page.titleimage }}" alt=""> {% endif %}
+        </div>
+    </div>
+</section>
+<!--End Banner Section -->
+
+<section class="news-section blog-page">
+    <div class="auto-container">
+
+        <div class="row clearfix">
+        
+            {% for game in site.showcase %}
+            <!--News Block-->
+            <div class="news-block col-lg-6 col-md-12 col-sm-12">
+                <div class="inner-box" onmouseover="document.getElementById('{{ game.slug }}').play()" onmouseout="document.getElementById('{{ game.slug }}').pause()">
+                    <figure class="image-box">{% if game.videothumbnail %}<video id="{{ game.slug }}" style="position:relative;display:block;width:100%;height:auto;" muted><source src="{{ game.videothumbnail }}" type="video/mp4"></video>{% else %}<img src="/assets/images/resource/news-image-4.jpg" alt="" title="">{% endif %}</figure>
+                    <div class="over-box">
+                        <div class="date"><span class="date-title">{{ game.submissionYear }}</span></div>
+                        <h3><a href="blog-single.html">{{ game.title }}</a></h3>
+                    </div>
+                </div>
+                <div class="inner-box">
+                    {{ game.content }}
+                </div>
+                
+            </div>
+            {% endfor %}
+
+        </div>
+
+    </div>
+</section>
