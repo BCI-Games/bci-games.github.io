@@ -310,7 +310,7 @@ layout: default
             <div class="featured-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="2000ms" data-wow-delay="0ms">
                 <div class="inner-box">
                     <div class="image-box">
-                        <div class="image"><a href="#"><img src="images/resource/featured-image-8.jpg" alt=""></a></div>
+                        <div class="image"><a href="#"><img src="/assets/images/resource/featured-image-8.jpg" alt=""></a></div>
                     </div>
                     <div class="lower-box">
                         <h3>A growing community making gaming a space for all</h3>
@@ -322,7 +322,7 @@ layout: default
             <div class="featured-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="2000ms" data-wow-delay="300ms">
                 <div class="inner-box">
                     <div class="image-box">
-                        <div class="image"><a href="#"><img src="images/resource/featured-image-9.jpg" alt=""></a></div>
+                        <div class="image"><a href="#"><img src="/assets/images/resource/featured-image-9.jpg" alt=""></a></div>
                     </div>
                     <div class="lower-box">
                         <h3>designed for brand new experiences and ways to play for all types of players</h3>
@@ -334,7 +334,7 @@ layout: default
             <div class="featured-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="2000ms" data-wow-delay="600ms">
                 <div class="inner-box">
                     <div class="image-box">
-                        <div class="image"><a href="#"><img src="images/resource/featured-image-10.jpg" alt=""></a></div>
+                        <div class="image"><a href="#"><img src="/assets/images/resource/featured-image-10.jpg" alt=""></a></div>
                     </div>
                     <div class="lower-box">
                         <h3>Access to experts, advocates, players, and cutting-edge technology</h3>
@@ -366,88 +366,29 @@ layout: default
         </div>
 
         <div class="row clearfix">
-
+            {% assign team = site.team | sort: 'orderDelay' %}
+            {% for member in team %}
             <!--Team Block-->
-            <div class="team-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0ms">
+            <div class="team-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="{{ member.orderDelay }}ms">
                 <div class="inner-box">
                     <div class="image">
-                        <a href="#"><img src="/assets/images/headshots/Headshot_EKL.JPG" alt=""></a>
+                        <a href="#"><img src="{{ member.image }}" alt=""></a>
                     </div>
                     <div class="lower-content">
-                        <h3><a href="#">Eli Kinney-Lang</a></h3>
-                        <div class="designation">Founder, Executive Director</div>
+                        <h3><a href="#">{{ member.firstName }} {{ member.lastName }}</a></h3>
+                        <div class="designation">{{ member.position }}</div>
                         <div class="social-links">
                             <ul class="social clearfix">
-                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                {% if member.twitter %}<li><a href="{{ member.twitter }}"><span class="fab fa-twitter"></span></a></li>{% endif %}
+                                {% if member.linkedin %}<li><a href="{{ member.linkedin }}"><span class="fab fa-linkedin-in"></span></a></li>{% endif %}
+                                {% if member.facebook %}<li><a href="{{ member.facebook }}"><span class="fab fa-facebook-square"></span></a></li>{% endif %}
+                                {% if member.instagram %}<li><a href="{{ member.instagram }}"><span class="fab fa-instagram"></span></a></li>{% endif %}
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!--Team Block-->
-            <div class="team-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                <div class="inner-box">
-                    <div class="image">
-                        <a href="#"><img src="images/resource/team-2.jpg" alt=""></a>
-                    </div>
-                    <div class="lower-content">
-                        <h3><a href="#">Dion Kelly</a></h3>
-                        <div class="designation">Director of Marketing & Events, Co-Founder</div>
-                        <div class="social-links">
-                            <ul class="social clearfix">
-                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fab fa-behance"></span></a></li>
-                                <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
-                                <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--Team Block-->
-            <div class="team-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-                <div class="inner-box">
-                    <div class="image">
-                        <a href="#"><img src="/assets/images/headshots/EFloreani-4 (1).jpg" alt=""></a>
-                    </div>
-                    <div class="lower-content">
-                        <h3><a href="#">Erica Floreani</a></h3>
-                        <div class="designation">Director of Technology, Co-Founder</div>
-                        <div class="social-links">
-                            <ul class="social clearfix">
-                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fab fa-behance"></span></a></li>
-                                <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
-                                <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--Team Block-->
-            <div class="team-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
-                <div class="inner-box">
-                    <div class="image">
-                        <a href="#"><img src="/assets/images/headshots/todd-guild-president.png" alt=""></a>
-                    </div>
-                    <div class="lower-content">
-                        <h3><a href="#">Todd Willsie</a></h3>
-                        <div class="designation">Director of Operations, Founding Partner</div>
-                        <div class="social-links">
-                            <ul class="social clearfix">
-                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
-                                <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            {% endfor %}
 
         </div>
     </div>
@@ -502,8 +443,8 @@ layout: default
                 <div class="inner wow fadeInLeft" data-wow-duration="2000ms" data-wow-delay="0ms">
                     <div class="image-box">
                         <div class="image"><img src="/assets/images/games/curl/curl-alien.png" alt="" title=""></div>
-                        <!-- <div class="cover-image"><img src="images/resource/featured-image-12.png" alt="" title=""></div> -->
-                        <div class="cover-image"><img src="images/developers/curlArt4k.jpg" alt="" title=""></div>
+                        <!-- <div class="cover-image"><img src="/assets/images/resource/featured-image-12.png" alt="" title=""></div> -->
+                        <div class="cover-image"><img src="/assets/images/developers/curlArt4k.jpg" alt="" title=""></div>
                     </div>
                 </div>
             </div>

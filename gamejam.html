@@ -89,42 +89,42 @@ layout: default
                         <!--Feature-->
                         <div class="feature col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="inner">
-                                <div class="icon-box"><span class="flaticon-download"></span></div>
+                                <div class="icon-box"><span class="flaticon-heart-1" style="color:#00ffff"></span></div>
                                 <div class="feature-title">More than 100 <br>developers</div>
                             </div>
                         </div>
                         <!--Feature-->
                         <div class="feature col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="inner">
-                                <div class="icon-box"><span class="flaticon-technology-2"></span></div>
+                                <div class="icon-box"><span class="flaticon-pacman" style="color:#00ffff"></span></div>
                                 <div class="feature-title">Building all types <br>of games</div>
                             </div>
                         </div>
                         <!--Feature-->
                         <div class="feature col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="inner">
-                                <div class="icon-box"><span class="flaticon-pacman-3"></span></div>
+                                <div class="icon-box"><span class="flaticon-users" style="color:#00ffff"></span></div>
                                 <div class="feature-title">Built for single and <br>multiplayer</div>
                             </div>
                         </div>
                         <!--Feature-->
                         <div class="feature col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="inner">
-                                <div class="icon-box"><span class="flaticon-quality-1"></span></div>
+                                <div class="icon-box"><span class="flaticon-quality-1" style="color:#00ffff"></span></div>
                                 <div class="feature-title">Over $5k CAD <br> won in prizes</div>
                             </div>
                         </div>
                         <!--Feature-->
                         <div class="feature col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="inner">
-                                <div class="icon-box"><span class="flaticon-tank"></span></div>
+                                <div class="icon-box"><span class="flaticon-tank" style="color:#00ffff"></span></div>
                                 <div class="feature-title">>20 brand new <br> adventures submitted</div>
                             </div>
                         </div>
                         <!--Feature-->
-                        <div class="feature col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="feature col-lg-4 col-md-6 col-sm-6 col-xs-12" >
                             <div class="inner">
-                                <div class="icon-box"><span class="flaticon-gamepad-controller"></span></div>
+                                <div class="icon-box"><span class="flaticon-gamepad-controller" style="color:#00ffff"></span></div>
                                 <div class="feature-title">Playable with BCI and <br> other inputs</div>
                             </div>
                         </div>
@@ -156,20 +156,22 @@ layout: default
         </div>
     </div>
 <!-- Carousel space doesn't seem to be doing anything right now...may want to fix this? -->
+<!-- TW: Carousel space does work, we just needed to point to the right placeholder images. -->
     <div class="carousel-box">
         <div class="game-images-carousel owl-theme owl-carousel">
+            {% for slide in site.data.gamejam2022slideShow %}
             <!--Slide Item-->
             <div class="slide-item">
                 <div class="gallery-item">
                     <div class="inner-box">
                         <figure class="image-box">
-                            <img src="images/resource/game-image-11.jpg" alt="">
+                            <img src="{{ slide.image }}" alt="{{ slide.alt }}">
                             <!--Overlay Box-->
                             <div class="overlay-box">
                                 <div class="overlay-inner">
                                     <div class="content">
-                                        <a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
-                                        <a href="images/resource/game-image-11.jpg" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-cross"></span></a>
+                                        {% if slide.link %}<a href="{{ slide.link }}" class="link"><span class="icon flaticon-unlink"></span></a>{% endif %}
+                                        <a href="{{ slide.image }}" data-fancybox="gallery-2" data-caption="{{ slide.alt }}" class="link"><span class="icon flaticon-cross"></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -177,101 +179,7 @@ layout: default
                     </div>
                 </div>
             </div>
-            <!--Slide Item-->
-            <div class="slide-item">
-                <div class="gallery-item">
-                    <div class="inner-box">
-                        <figure class="image-box">
-                            <img src="images/resource/game-image-12.jpg" alt="">
-                            <!--Overlay Box-->
-                            <div class="overlay-box">
-                                <div class="overlay-inner">
-                                    <div class="content">
-                                        <a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
-                                        <a href="images/resource/game-image-12.jpg" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-cross"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-            <!--Slide Item-->
-            <div class="slide-item">
-                <div class="gallery-item">
-                    <div class="inner-box">
-                        <figure class="image-box">
-                            <img src="images/resource/game-image-13.jpg" alt="">
-                            <!--Overlay Box-->
-                            <div class="overlay-box">
-                                <div class="overlay-inner">
-                                    <div class="content">
-                                        <a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
-                                        <a href="images/resource/game-image-13.jpg" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-cross"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-            <!--Slide Item-->
-            <div class="slide-item">
-                <div class="gallery-item">
-                    <div class="inner-box">
-                        <figure class="image-box">
-                            <img src="images/resource/game-image-11.jpg" alt="">
-                            <!--Overlay Box-->
-                            <div class="overlay-box">
-                                <div class="overlay-inner">
-                                    <div class="content">
-                                        <a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
-                                        <a href="images/resource/game-image-11.jpg" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-cross"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-            <!--Slide Item-->
-            <div class="slide-item">
-                <div class="gallery-item">
-                    <div class="inner-box">
-                        <figure class="image-box">
-                            <img src="images/resource/game-image-12.jpg" alt="">
-                            <!--Overlay Box-->
-                            <div class="overlay-box">
-                                <div class="overlay-inner">
-                                    <div class="content">
-                                        <a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
-                                        <a href="images/resource/game-image-12.jpg" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-cross"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-            <!--Slide Item-->
-            <div class="slide-item">
-                <div class="gallery-item">
-                    <div class="inner-box">
-                        <figure class="image-box">
-                            <img src="images/resource/game-image-13.jpg" alt="">
-                            <!--Overlay Box-->
-                            <div class="overlay-box">
-                                <div class="overlay-inner">
-                                    <div class="content">
-                                        <a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
-                                        <a href="images/resource/game-image-13.jpg" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-cross"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </figure>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 
@@ -294,109 +202,63 @@ layout: default
             <div class="gallery-item col-xl-4 col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <figure class="image-box">
-                        <img src="/assets/images/sponsors/U_Logo_White_RGB.png" alt="">
-                        <!--Overlay Box-->
-                        <!-- <div class="overlay-box">
-                            <div class="overlay-inner">
-                                <div class="content">
-                                    <a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
-                                    <a href="/assets/images/gallery/10.jpg" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-cross"></span></a>
-                                </div>
-                            </div>
-                        </div> -->
+                        <img src="/assets/images/sponsors/U_Logo_White_RGB.png" alt="" style="width: 50%; margin-left: auto; margin-right: auto; padding-top:3em;" >
                     </figure>
                 </div>
             </div>
 
             <!--Gallery Item-->
-            <div class="gallery-item col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="gallery-item col-xl-4 col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <figure class="image-box">
-                        <img src="/assets/images/sponsors/IC Logo with BCI bridgeline.png" alt="">
-                        <!--Overlay Box-->
-                        <!-- <div class="overlay-box">
-                            <div class="overlay-inner">
-                                <div class="content">
-                                    <a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
-                                    <a href="/assets/images/gallery/10.jpg" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-cross"></span></a>
-                                </div>
-                            </div>
-                        </div> -->
+                        <img src="/assets/images/sponsors/UA-RMED-COLOUR.png" alt="" style="width: 70%; margin-left: auto; margin-right: auto; padding-top:4em;">
+                        
                     </figure>
                 </div>
             </div>
 
             <!--Gallery Item-->
-            <div class="gallery-item col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="gallery-item col-xl-4 col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <figure class="image-box">
-                        <img src="/assets/images/sponsors/AHS Bridgeline Glenrose Rehabilitation Hospital.png" alt="">
-                        <!--Overlay Box-->
-                        <!-- <div class="overlay-box">
-                            <div class="overlay-inner">
-                                <div class="content">
-                                    <a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
-                                    <a href="/assets/images/gallery/12.jpg" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-cross"></span></a>
-                                </div>
-                            </div>
-                        </div> -->
+                        <img src="/assets/images/sponsors/AHS Bridgeline Glenrose Rehabilitation Hospital.png" alt="" style="width: 50%; margin-left: auto; margin-right: auto; padding-top:3em;">
+                        
                     </figure>
                 </div>
             </div>
 
             <!--Gallery Item-->
-            <div class="gallery-item col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <div class="gallery-item col-xl-4 col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <figure class="image-box">
-                        <img src="/assets/images/sponsors/GF-Vertical-Logo-Colour (1).png" alt="">
-                        <!--Overlay Box-->
-                        <!-- <div class="overlay-box">
-                            <div class="overlay-inner">
-                                <div class="content">
-                                    <a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
-                                    <a href="/assets/images/gallery/13.jpg" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-cross"></span></a>
-                                </div>
-                            </div>
-                        </div> -->
+                        <img src="/assets/images/sponsors/IC Logo with BCI bridgeline.png" alt="" style="width: 50%; margin-left: auto; margin-right: auto; padding-top:3em;">
                     </figure>
                 </div>
             </div>
 
             <!--Gallery Item-->
-            <div class="gallery-item col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <div class="gallery-item col-xl-4 col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <figure class="image-box">
-                        <img src="/assets/images/sponsors/GRITT-Logo-Colour.jpg" alt="">
-                        <!--Overlay Box-->
-                        <!-- <div class="overlay-box">
-                            <div class="overlay-inner">
-                                <div class="content">
-                                    <a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
-                                    <a href="/assets/images/gallery/14.jpg" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-cross"></span></a>
-                                </div>
-                            </div>
-                        </div> -->
+                        <img src="/assets/images/sponsors/GRITT-Logo-Colour.jpg" alt="" style="width: 50%; margin-left: auto; margin-right: auto; padding-top:5em;">
+                        
                     </figure>
                 </div>
             </div>
 
             <!--Gallery Item-->
-            <div class="gallery-item col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <div class="gallery-item col-xl-4 col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <figure class="image-box">
-                        <img src="/assets/images/sponsors/UA-RMED-COLOUR.png" alt="">
-                        <!-- Overlay Box
-                        <div class="overlay-box">
-                            <div class="overlay-inner">
-                                <div class="content">
-                                    <a href="#" class="link"><span class="icon flaticon-unlink"></span></a>
-                                    <a href="/assets/images/gallery/15.jpg" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-cross"></span></a>
-                                </div>
-                            </div>
-                        </div> -->
+                        <img src="/assets/images/sponsors/GF-Vertical-Logo-Colour (1).png" alt="" style="width: 50%; margin-left: auto; margin-right: auto; padding-top:3em;">
+                        
                     </figure>
                 </div>
             </div>
+
+            
+
+            
 
            
 
