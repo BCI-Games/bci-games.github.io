@@ -1,7 +1,7 @@
 ---
 firstName: Dion
 lastName: Kelly
-image: /assets/images/headshots/Headshot_EKL.JPG
+image: /assets/images/headshots/dion.jpg
 position: Director of Marketing & Events, Co-Founder
 twitter: 
 linkedin: 

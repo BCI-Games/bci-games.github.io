@@ -1,7 +1,7 @@
 ---
 firstName: Erica
 lastName: Floreani
-image: /assets/images/headshots/EFloreani-4 (1).jpg
+image: /assets/images/headshots/erica.jpg
 position: Director of Technology, Co-Founder
 twitter: 
 linkedin: 
