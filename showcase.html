@@ -20,8 +20,10 @@ titleimage:
     <div class="auto-container">
 
         <div class="row clearfix">
-        
-            {% for game in site.showcase %}
+            {% assign games2019 = site.showcase | sort: "title" | where: "submissionYear", "2019" %}
+            {% assign games2021 = site.showcase | sort: "title" | where: "submissionYear", "2021" %}
+            {% assign games = games2021 | concat: games2019 %}
+            {% for game in games %}
             <!--News Block-->
             <div class="news-block col-lg-6 col-md-12 col-sm-12">
                 <div class="inner-box" onmouseover="document.getElementById('{{ game.slug }}').play()" onmouseout="document.getElementById('{{ game.slug }}').pause()">
