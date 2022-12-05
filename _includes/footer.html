@@ -5,17 +5,14 @@
         <div class="auto-container">
             <div class="inner">
                 <!--Logo-->
-                <div class="footer-logo"><a href="index.html" title="Reydit - Digital Video Gaming and Consol HTML Template"><img src="/assets/images/SVG/logo.svg" alt="Reydit - Digital Video Gaming and Consol HTML Template" title="Reydit - Digital Video Gaming and Consol HTML Template"></a></div>
+                <div class="footer-logo"><a href="/" title="Reydit - Digital Video Gaming and Consol HTML Template"><img src="/assets/images/SVG/logo.svg" alt="Reydit - Digital Video Gaming and Consol HTML Template" title="Reydit - Digital Video Gaming and Consol HTML Template"></a></div>
 
                 <!--Footer Nav-->
                 <nav class="footer-nav">
                     <ul class="clearfix">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        {% for item in site.data.navigation %}
+                            <li><a href="{{item.link}}">{{ item.name }}</a></li>
+                        {% endfor %}
                     </ul>
                 </nav>
 
