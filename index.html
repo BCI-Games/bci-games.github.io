@@ -8,7 +8,8 @@ layout: default
 <section class="banner-section banner-two">
     <div class="banner-carousel owl-theme owl-carousel">
         
-        {% for item in site.featured %}
+        {% assign carousel-items = site.featured | sort: 'order' %}
+        {% for item in carousel-items %}
         <!-- Slide Item -->
         <div class="slide-item">
             <div class="image-layer" style="background-image:url( {{ item.image }} )"></div>
@@ -21,9 +22,11 @@ layout: default
                                 <div class="text-piece">{{ item.subtitle }}</div>
                                 <div class="big-text">{{ item.title }}</div>
                             </div>
+                            {% if item.link %}
                             <div class="link-box">
                                 <a href="{{ item.link }}" class="theme-btn btn-style-one"><span class="btn-title"><i class="btn-icon"></i> <span class="btn-text">learn more</span></span></a>
                             </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>  
