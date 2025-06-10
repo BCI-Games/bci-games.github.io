@@ -41,66 +41,6 @@ layout: default
 
     <div class="auto-container">
         <!--Platforms-->
-        <div class="platforms">
-            <div class="row clearfix">
-                <!--Platform Block-->
-                <div class="platofrm-block col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="2000ms" data-wow-delay="0ms">
-                    <div class="inner-box">
-                        <div class="icon-box"><img width="36px" src="/assets/images/bci-brands/openbci-icon.png" alt="" /></div>
-                        <div class="inner">
-                            <div class="p-title">
-                                <span class="upper-span">GAMES FOR</span> 
-                                <span class="lower-span">OpenBCI</span>
-                            </div>
-                            <div class="hover-text">Games that work with OpenBCI headsets</div>
-                        </div>
-                        <a href="#" class="over-link"></a>
-                    </div>
-                </div>
-                <!--Platform Block-->
-                <div class="platofrm-block col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="2000ms" data-wow-delay="300ms">
-                    <div class="inner-box">
-                        <div class="icon-box"><img width="36px" src="/assets/images/bci-brands/neurosity-icon.png" alt="" /></div>
-                        <div class="inner">
-                            <div class="p-title">
-                                <span class="upper-span">GAMES FOR</span> 
-                                <span class="lower-span">Neurosity</span>
-                            </div>
-                            <div class="hover-text">Games that work with Neurosity headsets</div>
-                        </div>
-                        <a href="#" class="over-link"></a>
-                    </div>
-                </div>
-                <!--Platform Block-->
-                <div class="platofrm-block col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="2000ms" data-wow-delay="600ms">
-                    <div class="inner-box">
-                        <div class="icon-box"><img width="36px" src="/assets/images/bci-brands/emotiv-icon.png" alt="" /></div>
-                        <div class="inner">
-                            <div class="p-title">
-                                <span class="upper-span">GAMES FOR</span> 
-                                <span class="lower-span">EMOTIV</span>
-                            </div>
-                            <div class="hover-text">Games that work with EMOTIV headsets</div>
-                        </div>
-                        <a href="#" class="over-link"></a>
-                    </div>
-                </div>
-                <!--Platform Block-->
-                <div class="platofrm-block col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="2000ms" data-wow-delay="900ms">
-                    <div class="inner-box">
-                        <div class="icon-box"><span class="flaticon-steam-3"></span></div>
-                        <div class="inner">
-                            <div class="p-title">
-                                <span class="upper-span">GAMES FOR</span> 
-                                <span class="lower-span">Steam</span>
-                            </div>
-                            <div class="hover-text">Our first game coming Fall/Winter 2022!</div>
-                        </div>
-                        <a href="#" class="over-link"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!--Middle Row-->
         <div class="mid-row">
@@ -145,23 +85,6 @@ layout: default
 </section>
 
 <!--Inspired Section-->
-<section class="inspired-section">
-    <div class="auto-container">
-        <div class="sec-title centered">
-            <div class="upper-line">
-                <span class="line"></span>
-                <span class="icon"></span>
-            </div>
-            <h2>You Inspire Us</h2>
-            <div class="lower-text">Who We Build Games For</div>
-        </div>
-    </div>
-
-    <div class="trailer-video-box">
-        <figure class="image"><img src="/assets/images/home_video.jpg" alt="" title=""></figure>
-        <a href="https://youtu.be/wb_JUJO1uhc?start=41" class="lightbox-image over-link"><span class="icon flaticon-play-button-3"></span></a>
-    </div>
-</section>
 
 <!--Why Us Section-->
 <section class="why-us-section">
@@ -224,46 +147,6 @@ layout: default
 
 
 <!--Team Section-->
-<section class="team-section">
-    <div class="auto-container">
-        <div class="sec-title centered">
-            <div class="upper-line">
-                <span class="line"></span>
-                <span class="icon"></span>
-            </div>
-            <h2>Creative Crew</h2>
-            <div class="lower-text">The minds behind our mission</div>
-        </div>
-
-        <div class="row clearfix">
-            {% assign team = site.team | sort: 'orderDelay' %}
-            {% for member in team %}
-            <!--Team Block-->
-            <div class="team-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="{{ member.orderDelay }}ms">
-                <div class="inner-box">
-                    <div class="image">
-                        <a href="#"><img src="{{ member.image }}" alt=""></a>
-                    </div>
-                    <div class="lower-content">
-                        <h3><a href="#">{{ member.firstName }} {{ member.lastName }}</a></h3>
-                        <div class="designation">{{ member.position }}</div>
-                        <div class="social-links">
-                            <ul class="social clearfix">
-                                {% if member.twitter %}<li><a href="{{ member.twitter }}"><span class="fab fa-twitter"></span></a></li>{% endif %}
-                                {% if member.linkedin %}<li><a href="{{ member.linkedin }}"><span class="fab fa-linkedin-in"></span></a></li>{% endif %}
-                                {% if member.facebook %}<li><a href="{{ member.facebook }}"><span class="fab fa-facebook-square"></span></a></li>{% endif %}
-                                {% if member.instagram %}<li><a href="{{ member.instagram }}"><span class="fab fa-instagram"></span></a></li>{% endif %}
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-
-        </div>
-    </div>
-    
-</section>
 
 <!--Call To Action Section-->
 <section class="call-to-action">
@@ -286,91 +169,3 @@ layout: default
 </section>
 
 <!--Featured Game Section-->
-<section class="featured-game">
-
-    <div class="auto-container">
-
-        <div class="row clearfix">
-            <!--Text Column-->
-            <div class="text-column col-lg-6 col-md-12 col-sm-12">
-                <div class="inner">
-                    <div class="sec-title">
-                        <h2><i>Curl!</i> by Bonspiel Games</h2>
-                        <h3>A fully online multiplayer BCI Experience</h3>
-                        <div class="lower-line">
-                            <span class="icon"></span>
-                            <span class="line"></span>
-                        </div>
-                    </div>
-                    <div class="text">
-                        <p><strong>First-of-its-kind game, built from the ground up for accessibility.</strong></p>
-                        <p>Built with integrated control schemes using Brain-Computer-Interface (BCI), switch-access, or others in addition to traditional controllers</p>
-                    </div>
-                </div>
-            </div>
-            <!--Image Column-->
-            <div class="image-column col-lg-6 col-md-12 col-sm-12">
-                <div class="inner wow fadeInLeft" data-wow-duration="2000ms" data-wow-delay="0ms">
-                    <div class="image-box">
-                        <div class="image"><img src="/assets/images/games/curl/curl-alien.png" alt="" title=""></div>
-                        <!-- <div class="cover-image"><img src="/assets/images/resource/featured-image-12.png" alt="" title=""></div> -->
-                        <div class="cover-image"><img src="/assets/images/developers/curlArt4k.jpg" alt="" title=""></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="game-awards">
-
-            <div class="awards">
-                <div class="row clearfix">
-                    <!--Award Block-->
-                    <div class="award-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="2000ms" data-wow-delay="0ms">
-                        <div class="inner-box">
-                            <div class="inner">
-                                <div class="content">
-                                    <div class="upper-title">Best <br> Multiplayer <br> 2021</div>
-                                    <div class="lower-title">Winner</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Award Block-->
-                    <div class="award-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="2000ms" data-wow-delay="300ms">
-                        <div class="inner-box">
-                            <div class="inner">
-                                <div class="content">
-                                    <div class="upper-title">Best <br> 4-Player<br>Game</div>
-                                    <div class="lower-title">Winner</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Award Block-->
-                    <div class="award-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="2000ms" data-wow-delay="600ms">
-                        <div class="inner-box">
-                            <div class="inner">
-                                <div class="content">
-                                    <div class="upper-title">Best <br> Brains@Play <br> Game</div>
-                                    <div class="lower-title">Winner</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Award Block-->
-                    <div class="award-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="2000ms" data-wow-delay="900ms">
-                        <div class="inner-box">
-                            <div class="inner">
-                                <div class="content">
-                                    <div class="upper-title">Best <br> Game<br>2021</div>
-                                    <div class="lower-title">Runner-Up</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-</section>
