@@ -30,7 +30,7 @@ image: /assets/images/showcase.jpg
                     <figure class="image-box">{% if game.videothumbnail %}<video id="{{ game.slug }}" style="position:relative;display:block;width:100%;height:auto;" muted><source src="{{ game.videothumbnail }}" type="video/mp4"></video>{% else %}<img src="/assets/images/resource/news-image-4.jpg" alt="" title="">{% endif %}</figure>
                     <div class="over-box">
                         <div class="date"><span class="date-title">{{ game.submissionYear }}</span></div>
-                        <h3><a href="blog-single.html">{{ game.title }}</a></h3>
+                        <h3>{{ game.title }}</h3>
                     </div>
                 </div>
                 <div class="inner-box">
