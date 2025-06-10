@@ -50,8 +50,7 @@ collections:
     output: true
   resources:
     output: true
-  games:
-    output: true
+  jams:
   featured:
 
 # Exclude from processing.

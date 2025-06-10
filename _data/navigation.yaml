@@ -1,18 +1,13 @@
 - name: Home
   link: /
-- name: About
-  link: /about.html
-- name: Games
-  link: /games.html
-  submenu:
-    - name: CURL!
-      link: /games/curl.html
 - name: Showcase
   link: /showcase.html
 - name: Jams
-  link: /jams.html
+  link: /jams/
   submenu:
-    - name: Game Jam 2022
-      link: /gamejam.html
+    - name: 2022
+      link: /jams/2022
+    - name: 2025
+      link: /jams/
 - name: Contact
   link: /contact.html
