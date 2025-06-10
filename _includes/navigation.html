@@ -48,7 +48,12 @@
                                     <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                         <ul class="navigation clearfix">
                                             {% for item in site.data.navigation limit:3 %}
-                                            <li class="{% if page.url == item.link %} current {% endif %} dropdown"><a href="{{ item.link }}">{{ item.name }}</a>
+                                            <li class="
+                                                {% if page.url == item.link or (page.dir == item.link and page.dir != '/') %} current {% endif %} 
+                                                {% if item.submenu %} dropdown {% endif %}
+                                                "
+                                            >
+                                                <a href="{{ item.link }}">{{ item.name }}</a>
                                                 {% if item.submenu %}<ul>
                                                     {% for subitem in item.submenu %}
                                                     <li><a href="{{ subitem.link }}">{{ subitem.name }}</a></li>
@@ -60,7 +65,12 @@
                                         </ul>
                                         <ul class="navigation clearfix">
                                             {% for item in site.data.navigation offset:3 limit:3 %}
-                                            <li class="{% if page.url == item.link %} current {% endif %} dropdown"><a href="{{ item.link }}">{{ item.name }}</a>
+                                            <li class="
+                                                {% if page.url == item.link or (page.dir == item.link and page.dir != '/') %} current {% endif %} 
+                                                {% if item.submenu %} dropdown {% endif %}
+                                                "
+                                            >
+                                                <a href="{{ item.link }}">{{ item.name }}</a>
                                                 {% if item.submenu %}<ul>
                                                     {% for subitem in item.submenu %}
                                                     <li><a href="{{ subitem.link }}">{{ subitem.name }}</a></li>
@@ -109,11 +119,13 @@
                     <!--Social Links-->
                     <div class="social-links">
                         <ul class="clearfix">
-                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
-                            <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
-                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a href="#"><span class="fab fa-youtube"></span></a></li>
+                            {% if site.facebook_url %}<li><a href="{{ site.facebook_url }}" target="_blank"><span class="fab fa-facebook-square"></span></a></li>{% endif %}
+                            {% if site.linkedin_url %}<li><a href="{{ site.linkedin_url }}" target="_blank"><span class="fab fa-linkedin-in"></span></a></li>{% endif %}
+                            {% if site.instagram_url %}<li><a href="{{ site.instagram_url }}" target="_blank"><span class="fab fa-instagram"></span></a></li>{% endif %}
+                            {% if site.twitter_url %}<li><a href="{{ site.twitter_url}}" target="_blank"><span class="fab fa-twitter"></span></a></li>{% endif %}
+                            {% if site.youtube_url %}<li><a href="{{ site.youtube_url }}" target="_blank"><span class="fab fa-youtube"></span></a></li>{% endif %}
+                            {% if site.flickr_url %}<li><a href="{{ site.flickr_url }}" target="_blank"><span class="fab fa-flickr"></span></a></li>{% endif %}
+                            {% if site.discord_url %}<li><a href="{{ site.discord_url }}" target="_blank"><span class="fab fa-discord"></span></a></li>{% endif %}
                         </ul>
                     </div>
                 </nav>
