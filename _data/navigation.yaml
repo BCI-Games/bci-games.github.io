@@ -3,12 +3,12 @@
 - name: Showcase
   link: /showcase.html
 - name: Jams
-  link: /jams/
+  link: /jams/2025-jam
   submenu:
     - name: 2022
       link: /jams/2022
     - name: 2025
-      link: /jams/
+      link: /jams/2025-jam
 - name: BCIs 
   link: /whatIsBCI.html
 - name: Contact
