@@ -12,7 +12,7 @@ layout: default
         {% for item in carousel-items %}
         <!-- Slide Item -->
         <div class="slide-item">
-            <div class="image-layer" style="background-image:url( {{ item.image }} )"></div>
+            <div class="image-layer" style="background-image: url('{{ item.image }}');"></div>
 
             <div class="auto-container">
                 <div class="content-box">
@@ -25,6 +25,11 @@ layout: default
                             {% if item.link %}
                             <div class="link-box">
                                 <a href="{{ item.link }}" class="theme-btn btn-style-one"><span class="btn-title"><i class="btn-icon"></i> <span class="btn-text">learn more</span></span></a>
+                            </div>
+                            {% endif %}
+                            {% if item.message %}
+                            <div class="link-box" style="pointer-events: none;">
+                                <span class="theme-btn btn-style-one" style="cursor: default;"><span class="btn-title"><i class="btn-icon"></i><span class="btn-text">{{ item.message }}</span></span></span>
                             </div>
                             {% endif %}
                         </div>

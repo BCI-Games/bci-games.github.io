@@ -11,11 +11,39 @@ layout: default
 <!-- Page Banner Section -->
 <section class="page-banner">
     <div class="banner-inner">
-        <div class="image-layer" style="background-image:url({{ page.image }})"></div>
+        <div class="image-layer" style="background-image:url('{{ page.image }}');"></div>
         <div class="auto-container">
             <h1>{{ page.title }}</h1>
             {% if page.titleimage %}<img width="50%" src="{{ page.titleimage }}" alt=""> {% endif %}
             <h2>{{ page.eventdate }}</h2>
+        </div>
+    </div>
+
+<!-- Carousel space doesn't seem to be doing anything right now...may want to fix this? -->
+<!-- TW: Carousel space does work, we just needed to point to the right placeholder images. -->
+    <div class="carousel-box">
+        <div class="game-images-carousel owl-theme owl-carousel">
+            {% for slide in site.data.gamejam2022slideShow %}
+            <!--Slide Item-->
+            <div class="slide-item">
+                <div class="gallery-item">
+                    <div class="inner-box">
+                        <figure class="image-box">
+                            <img src="{{ slide.image }}" alt="{{ slide.alt }}">
+                            <!--Overlay Box-->
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <div class="content">
+                                        {% if slide.link %}<a href="{{ slide.link }}" class="link"><span class="icon flaticon-unlink"></span></a>{% endif %}
+                                        <a href="{{ slide.image }}" data-fancybox="gallery-2" data-caption="{{ slide.alt }}" class="link"><span class="icon flaticon-cross"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -205,33 +233,7 @@ layout: default
     </div>
 
 
-<!-- Carousel space doesn't seem to be doing anything right now...may want to fix this? -->
-<!-- TW: Carousel space does work, we just needed to point to the right placeholder images. -->
-    <div class="carousel-box">
-        <div class="game-images-carousel owl-theme owl-carousel">
-            {% for slide in site.data.gamejam2022slideShow %}
-            <!--Slide Item-->
-            <div class="slide-item">
-                <div class="gallery-item">
-                    <div class="inner-box">
-                        <figure class="image-box">
-                            <img src="{{ slide.image }}" alt="{{ slide.alt }}">
-                            <!--Overlay Box-->
-                            <div class="overlay-box">
-                                <div class="overlay-inner">
-                                    <div class="content">
-                                        {% if slide.link %}<a href="{{ slide.link }}" class="link"><span class="icon flaticon-unlink"></span></a>{% endif %}
-                                        <a href="{{ slide.image }}" data-fancybox="gallery-2" data-caption="{{ slide.alt }}" class="link"><span class="icon flaticon-cross"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
+
 
 </section>
 

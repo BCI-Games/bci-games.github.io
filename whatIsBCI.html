@@ -1,7 +1,110 @@
 ---
-title: What is a Brain-computer interface (BCI)?
-titleimage: /assets/images/jam2022.png
-image: /assets/images/background/gamejam2022.jpg
+title: Brain-Computer Interface Basics
+image: /assets/images/background/hexagon_line_neon_glow.jpg
 description:
 layout: default
 ---
+
+<!-- Page Banner Section -->
+<section class="page-banner">
+    <div class="banner-inner">
+        <div class="image-layer" style="background-image: url('{{ page.image }}');"></div>
+        <div class="auto-container">
+            <h1>{{ page.title }}</h1>
+            {% if page.titleimage %}<img width="50%" src="{{ page.titleimage }}" alt=""> {% endif %}
+        </div>
+    </div>
+</section>
+<!--End Banner Section -->
+
+<!-- FAQ Section - taken from bcigamejam.com -->
+<section class="game-details-section" id="background-section">
+    <div class="auto-container">
+        <div class="game-details">
+        <div class="sec-title centered">
+            <div class="upper-line">
+                <span class="line"></span>
+                <span class="icon"></span>
+            </div>
+            <h2>What is a BCI?</h2>
+            <div class="lower-text">Getting started</div>
+        </div>
+
+        <div class ="text">
+            <h4>What is a Brain-Computer Interface, or BCI, really?</h4>
+            <p>
+                Broadly, brain-computer interfaces (BCIs) are a new and growing technology that allow people to interact with their environment using just the patterns in their brain.
+                By reading simple electric changes that happen on the surface of the brain, BCIs can detect high level changes in attention, focus, or even imagined actions.
+                This lets people interact with their world in new and exciting ways, and bypassing traditional input methods like a keyboard or mouse, which may be limiting for persons with complex motor differences.
+                By directly processing these brain signals and intents, BCIs can open up incredible new opportunities for everyone to be able to game - irrespective of potential physical limitations. 
+            </p>
+            <h4>How do BCIs work then?</h4>
+            <p>
+                There are many different types of BCI systems, with the most common using a series of sensors placed on the scalp to read the electric patterns of the brain, called electroencephalography or "EEG".
+                We can then elicit well known patterns from the brain and pair their responses to desired actions in game - such as moving a character or selecting an item.
+                To elicit these patterns, we can use outside driving stimuli, like flashing lights or sounds or changes in the game environment, and detect changes to a person's attention or focus.
+                Alternatively, we can use internal stimuli, like imagining moving a limb or focusing on a specific thought, to elicit another set of patterns, and again examine specific readings from the EEG.
+                Don't worry though - what we can detect is very broad and high level, so we can't read your thoughts or inner feelings, just the general changes in your brain activity!
+                So we might know you're imaginging a movement of some kind, but couldn't tell if you were picturing throwing a baseball or petting a dog. (Or if you even have a dog).
+            </p>
+        </div>
+
+    </div>
+ </div>
+    
+
+</section>
+
+<!-- FAQ Section - updated from the jam-2022 space -->
+<section class="game-details-section" id="FAQ-section">
+    <div class="auto-container">
+        <div class="game-details">
+        <div class="sec-title centered">
+            <div class="upper-line">
+                <span class="line"></span>
+                <span class="icon"></span>
+            </div>
+            <h2>FAQ</h2>
+            <div class="lower-text">Frequently Asked Questions</div>
+        </div>
+
+        <div class ="text">
+            <h4>Aren't BCI systems science fiction or something you have to implant?</h4>
+            <p>
+                Nope! BCI research has been going for over two decades with pretty significant strides happening in the last 5 years.
+                While lots of BCI systems featured in the news are implantable, there are many systems (like those we often work with) which are called "non-implanted" and just use a wearable headset.
+                And don't worry - while interest is growing in the space, BCIs have actually been around since the 90s. 
+                Recent groups and media are just helping raise the general awareness that these technologies exist - and hopefully events like the <a href="/jams"><span style="color: #fcee21">BCI Game Jam series</span></a> show what this technology could help do!
+            </p>
+
+            <h4>Are BCIs safe to use?</h4>
+            <p>
+                Yes! We primarily work with non-implanted BCI systems, which simply read electric activity from sensors placed on the scalp. 
+                These sensors can be dry, use saline (salt water), or a gel to help improve their ability to read the brain's electric signals.
+                There are lots of different styles and designs for these types of systems, but they are all designed to be safe and comfortable to wear. (Well most of them...)
+                While there are some implanted BCI systems we work with and support, this is done in partnership with teams of medical and engineering experts. (Cause everyone deserves to get a chance to play!)
+            </p>
+            
+            <h4>Can I play any game with a BCI?</h4>
+            <p>
+                Maybe someday. Right now though, the way games are designed causes some inherent limitations to how well BCIs can be used as a drop-in replacement for traditional control schemes. 
+                While some games might work, the experience may not be as fluid, fun, or engaging as it could be.
+                But that's what we are here for! We want to help you design and develop games that are for everyone, with a focus on building engaging experiences from the ground up to be playable with BCIs.
+                Also creating brand new gaming experiences that are unique to BCI-play is pretty dang fun too.
+            </p>
+
+            <h4>Where can I learn more about BCIs and integrating them into gaming?</h4>
+            <p>
+                There are lots of great resources out there to get you started with BCIs.
+                We are still working on making a curated list of these for you to check out.
+                Until then, we offer a number of free, open source tools in partnership with BCI4Kids to help you "add in" BCI functionality as seamlessly as possible through our "BCI Essentials" library.  <br>
+                Check out the <a href="https://github.com/kirtonBCIlab/bci-essentials-unity"><span style="color: #fcee21">tools for developing in Unity on Github</span></a> and the complementary <a href="https://github.com/kirtonBCIlab/bci-essentials-python"><span style="color: #fcee21">suite of backend BCI processing tools in python</span></a> if you're interested.
+                Be sure to drop us a line too if you have any questions or want to learn more about how to get started with BCIs in your games!
+            </p>
+        </div>
+
+    </div>
+ </div>
+    
+
+</section>
