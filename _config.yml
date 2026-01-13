@@ -22,11 +22,9 @@ title: BCI Games
 tagline: Home for Brain Computing Interface games and development
 email: contact@bci.games
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Home for Brain Computing Interface games and development.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "bci.games"
 twitter_url: https://twitter.com/thebcigamers
 facebook_url:
 linkedin_url:
@@ -35,7 +33,7 @@ youtube_url:
 flickr_url:
 discord_url: https://discord.gg/A7tn6cHbP5
 
-copyright: Copyright BCI Games 2019-2022. All Rights Reserved.
+copyright: Copyright BCI Games 2019-2026. All Rights Reserved.
 
 # Build settings
 theme: minima
