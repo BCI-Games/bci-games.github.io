@@ -34,3 +34,11 @@ gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "webrick", "~> 1.9.1"
+
+gem "addressable", ">= 2.9.0"
+
+gem "concurrent-ruby", ">= 1.3.7"
+
+gem "json", ">= 2.19.9"
+
+gem "rexml", ">= 3.4.2"
